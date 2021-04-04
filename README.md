@@ -3,6 +3,7 @@
 
 ## INSTALL ##
 **Install command:**
+
 `git clone https://github.com/UW935/telegram_app_time`
 ##  THE FIRST START ##
 **To run the application, you must create a telegram-app [here](https://my.telegram.org/auth?to=create). [Photo for verification](https://imgur.com/a/UZZ5JyZ).**
