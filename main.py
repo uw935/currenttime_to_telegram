@@ -1,6 +1,6 @@
 from telethon.sync import TelegramClient
 from telethon.tl.functions.account import UpdateProfileRequest
-import config, datetime, time
+import config, datetime, time, os
 os.system('pip install telethon')
 os.system('cls')
 
