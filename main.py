@@ -1,9 +1,11 @@
+import os
+
 os.system('pip install telethon')
 os.system('cls')
 
 from telethon.sync import TelegramClient
 from telethon.tl.functions.account import UpdateProfileRequest
-import config, datetime, time, os
+import config, datetime, time
 
 
 print("Hi! This is TELEGRAM APP - TIME. If you have not entered the data, then enter your data in the config.py file for further work. If you have any questions or error - write me. \n \n Author: https://github.com/UW935\n TELEGRAM: @uw935. \n \n")
@@ -19,6 +21,6 @@ while a < 50:
 		today = datetime.datetime.today()
 		profile_bio = "🕓| Current time: " + today.strftime("%H:%M:%S")
 		client(UpdateProfileRequest(about=profile_bio))
-		time.sleep(10)
+		time.sleep(30)
 
 #говнокод))
