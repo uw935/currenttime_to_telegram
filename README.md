@@ -5,10 +5,10 @@
 **To install, you must have PYTHON 3.6 and higher. As well as PIP.3.6 and higher. Install all this you can [here](https://www.python.org/downloads/)**
 
 **Install command:**
-1. **Installing the library. If you have this, skip.** - `pip install`
-2. `git clone https://github.com/UW935/telegram_app_time`
-3. `cd telegram_app_time`
-4. **Open file telegram_app_time on you PC**
+
+1. `git clone https://github.com/UW935/telegram_app_time`
+2. `cd telegram_app_time`
+3. **Open file telegram_app_time on you PC**
 
 
 ##  THE FIRST START ##
