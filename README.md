@@ -2,9 +2,15 @@
 **Briefly about the program:** displays the current time in the profile bio.
 
 ## INSTALL ##
-**Install command:**
+**To install, you must have PYTHON 3.6 and higher. As well as PIP.3.6 and higher. Install all this you can [here](https://www.python.org/downloads/)**
 
-`git clone https://github.com/UW935/telegram_app_time`
+**Install command:**
+1. **Installing the library. If you have this, skip.** - `pip install`
+2. `git clone https://github.com/UW935/telegram_app_time`
+3. `cd telegram_app_time`
+4. **Open file telegram_app_time on you PC**
+
+
 ##  THE FIRST START ##
 **To run the application, you must create a telegram-app [here](https://my.telegram.org/auth?to=create). [Photo for verification](https://imgur.com/a/UZZ5JyZ).**
 
