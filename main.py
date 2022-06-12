@@ -1,26 +1,29 @@
-import os
-
-os.system('pip install telethon')
-os.system('cls')
-
 from telethon.sync import TelegramClient
+from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.functions.account import UpdateProfileRequest
-import config, datetime, time
+import datetime, time
+
+print("Author: https://github.com/uw935/ \nTelegram: @uw935.\n")
+print("Please, use CTRL+C to exit\n\n")
+
+API_ID   = int(input("Enter you API ID: "))
+API_HASH = str(input("Enter you API HASH: "))
+
+with TelegramClient('session', API_ID, API_HASH) as client:
+	bionow = str(client(GetFullUserRequest(client.get_me().username)).about)
+
+	print(f"\nSuccessful connected as {client.get_me().username}")
+
+	while True:
+		try:
+			today = datetime.datetime.today()
+
+			client(UpdateProfileRequest(about = "🕓 | Current local time: " + today.strftime("%H:%M:%S")))
+			time.sleep(15)
+
+		except:
+			client(UpdateProfileRequest(about = bionow))
+			client.disconnect()
 
 
-print("Hi! This is TELEGRAM APP - TIME. If you have not entered the data, then enter your data in the config.py file for further work. If you have any questions or error - write me. \n \n Author: https://github.com/UW935\n TELEGRAM: @uw935. \n \n")
 
-#переменные
-session_name = 'session'
-ApiId = config.api_id
-ApiHash = config.api_hash
-a = 5
-
-while a < 50:
-	with TelegramClient(session_name, config.api_id, config.api_hash) as client:
-		today = datetime.datetime.today()
-		profile_bio = "🕓| Current time: " + today.strftime("%H:%M:%S")
-		client(UpdateProfileRequest(about=profile_bio))
-		time.sleep(30)
-
-#говнокод))
