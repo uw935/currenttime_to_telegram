@@ -1,24 +1,30 @@
-## TELEGRAM APP - TIME CHANGER ##
-**Briefly about the program:** displays the current local time in the profile bio.
+<br>
+<p align="center">
+    <img align="center" src="media/thumbnail.png">
+    <h3 align="center">Current time to Telegram</h3>
+    <p align="center">Displays the current local time in the profile bio</p>
+</p>
+<br>
 
-## INSTALL ##
-**To install, you must have PYTHON 3.6 and higher. As well as PIP.3.6 and higher. Install all this you can [here](https://www.python.org/downloads/)**
+## Installation ##
 
-**Install command:**
+To install, you must have PYTHON 3.6 and higher. As well as PIP.3.6 and higher. Install all this you can [here](https://www.python.org/downloads/)
 
-1. `git clone https://github.com/uw935/currenttime_to_telegram`
-2. `cd currenttime_to_telegram` **or open file currenttime_to_telegram on you PC**
+Steps:
 
+1. ```git clone https://github.com/uw935/currenttime_to_telegram```
+2. ```cd currenttime_to_telegram```
 
-##  THE FIRST START ##
-**To run the application, you must create a telegram-app [here](https://my.telegram.org/auth?to=create). [Photo for verification](https://imgur.com/a/UZZ5JyZ).**
+##  First start ##
+__Attention__: This application can cause a logout from your account
 
-**Then you must insert data with start app**
+Steps:
 
-**Thank you for installing.**
+1. Create telegram-app [here](https://my.telegram.org/auth?to=create). [Photo for verification](https://imgur.com/a/UZZ5JyZ).
+2. Insert following data to main.py in the const variables (API_ID, API_HASH)
+3. Run it and enjoy!
+4. If you want to change text, that displays in bio, you can do it with the "TEXT" variable on 19 line
 
-## THE END ##
+## Author contacts ##
 
-If you have any questions or error, please write me in telegram: [@uw935](https://web.telegram.org/uw935)
-
-**Thank you. Bye!**
+Telegram: @uw935
